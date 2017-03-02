@@ -4,7 +4,7 @@ template:
   description: >-
     With this toolchain, you can deploy a DevOps insights toolchain containing
     Github,Slack and Jenkins. You can quickly get Developer / Team and
-    Deployment Risk Insights by using this template to start your analysis. 
+    Deployment Risk Insights by using this template to start your analysis.
 
 
     To get started, click **Create**.
@@ -21,7 +21,10 @@ toolchain:
 services:
   insights:
     service_id: draservicebroker
-    $ref: insights.yml
+    parameters:
+      criteria:
+        $ref: "insights-criteria.json"
+        $refType: text
   github-repo:
     service_id: githubpublic
     parameters:

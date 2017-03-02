@@ -1,5 +1,0 @@
----
-parameters:
-  criteria:
-    $ref: "insights-criteria.json"
-    $refType: text
