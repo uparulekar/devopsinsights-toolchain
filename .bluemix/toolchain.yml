@@ -9,6 +9,7 @@ template:
     A GitHub repository can be configured to indicate the source repository used by Jenkins. When the repo is configured, change traceability is available. Also, DevOps Insights starts to mine the repo to provide developer insights and team dynamics views within the DevOps Insights application. The initial mining process can take minutes to hours, depending on the size of the repo, before the developer and team insights dashboards are populated. 
     
     To get started, click **Create**.
+  header: '![](toolchain.svg?localize "header image")'
   icon: icon.svg
   required:
     - github-repo
