@@ -8,6 +8,7 @@ template:
 
 
     To get started, click **Create**.
+  icon: icon.svg
   required:
     - github-repo
     - insights
