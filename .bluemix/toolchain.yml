@@ -28,9 +28,9 @@ services:
   github-repo:
     service_id: githubpublic
     parameters:
-      repo_name: ''
-      repo_url: ''
-      type: new | clone | link | fork
+      repo_name: '{{form.githubpublic.parameters.devopsinsights-repo_name}}'
+      repo_url: '{{form.githubpublic.parameters.devopsinsights-repo_url}}'
+      type: clone
       has_issues: true
   jenkins:
     service_id: jenkins
@@ -39,4 +39,10 @@ services:
       dashboard_url: ''
   messaging:
     service_id: slack
-form: {}
+form:
+  githubpublic:
+    parameters:
+      devopsinsights-repo_name: '{{toolchain.name}}'
+      devopsinsights-repo_url: 'https://github.com/open-toolchain/DemoDRA'
+    schema:
+      $ref: github.json
