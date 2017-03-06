@@ -26,7 +26,6 @@ toolchain:
       **Your toolchain is ready!**
 
       **Quick start:** Configure the Jenkins server to send data to DevOps Insights when Jenkins runs the test jobs.
-      
       For step-by-step instructions, see the [Bluemix Docs](https://console.ng.bluemix.net/docs/services/DevOpsInsights/jenkins_integration.html#toolchain_configure_jenkins).
 services:
   insights:
