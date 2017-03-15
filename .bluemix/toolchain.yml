@@ -32,8 +32,7 @@ services:
     service_id: draservicebroker
     parameters:
       criteria:
-        $ref: "insights-criteria.json"
-        $refType: text
+        $text: "insights-criteria.json"
   github-repo:
     service_id: githubpublic
     parameters:
