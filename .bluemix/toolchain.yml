@@ -1,14 +1,11 @@
 version: '2'
+messages:
+  $i18n: locales.yml
 template:
-  name: 'Deployment Risk Analytics with GitHub and Jenkins'
-  description: |-
-    Use this toolchain to gain insights into your Jenkins process for continuous integration and delivery.  Configure the Jenkins server using these [instructions](https://console.ng.bluemix.net/docs/services/DevOpsInsights/jenkins_integration.html#toolchain_configure_jenkins) to send data to DevOps Insights when the jobs are run by Jenkins.  You can also implement quality gates to block deployments based on policies. See results in the Deployment Risk dashboard in DevOps Insights.  
-
-    If a notification tool like Slack is configured in your toolchain, job completion notifications from Jenkins will be forwarded to the notification tool. 
-
-    A GitHub repository can be configured to indicate the source repository used by Jenkins. When the repo is configured, change traceability is available. Also, DevOps Insights starts to mine the repo to provide developer insights and team dynamics views within the DevOps Insights application. The initial mining process can take minutes to hours, depending on the size of the repo, before the developer and team insights dashboards are populated. 
-    
-    To get started, click **Create**.
+  name:
+    $ref: "#/messages/template.name"
+  description:
+    $ref: "#/messages/template.description"
   header: '![](toolchain.svg?localize "header image")'
   icon: icon.svg
   required:
@@ -22,11 +19,8 @@ template:
 toolchain:
   name: 'devopsinsights-toolchain-{{timestamp}}'
   template:
-    getting_started: |-
-      **Your toolchain is ready!**
-
-      **Quick start:** Configure the Jenkins server to send data to DevOps Insights when Jenkins runs the test jobs.
-      For step-by-step instructions, see the [Bluemix Docs](https://console.ng.bluemix.net/docs/services/DevOpsInsights/jenkins_integration.html#toolchain_configure_jenkins).
+    getting_started:
+      $ref: "#/messages/template.gettingStarted"
 services:
   insights:
     service_id: draservicebroker
