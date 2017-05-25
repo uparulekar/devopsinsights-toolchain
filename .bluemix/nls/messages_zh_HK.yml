@@ -1,8 +1,8 @@
 ---
 template.name: "搭配 GitHub 及 Jenkins 的部署風險分析"
 template.description: "使用此工具鏈，可洞察 Jenkins 處理程序，以進行持續整合與交付。請使用這些 [指示](https://console.ng.bluemix.net/docs/services/DevOpsInsights/jenkins_integration.html#toolchain_configure_jenkins) 配置 Jenkins 伺服器，以在 Jenkins 執行工作時，將資料傳送至 DevOps Insights。您也可以實作品質閘門，根據原則來封鎖部署。請在 DevOps Insights 的「部署風險」儀表板中查看結果。\n\n如果在工具鏈中配置了通知工具（如 Slack），則來自 Jenkins 的工作完成通知將轉遞至通知工具。\n\nGitHub 儲存庫可以配置為指出 Jenkins 所使用的來源儲存庫。若配置了儲存庫，即可使用變更可追蹤性。DevOps Insights 也會開始發掘儲存庫，以在 DevOps Insights 應用程式內提供開發人員洞察及團隊動態視圖。在移入開發人員及團隊洞察儀表板之前，起始採礦程序可能需要數分鐘至數小時，視儲存庫的大小而定。\n\n若要開始，請按一下**建立**。"
-template.gettingStarted: "**您的工具鏈已備妥！**\n**快速入門：** 配置 Jenkins 伺服器，以在 Jenkins 執行測試工作時，將資料傳送至 DevOps Insights。如需逐步指示，請參閱 [Bluemix 文件](https://console.ng.bluemix.net/docs/services/DevOpsInsights/jenkins_integration.html#toolchain_configure_jenkins)。"
-deploy.title: "範例服務部署暫置"
+template.gettingStarted: "**您的工具鏈已備妥！**\n**快速入門：** 配置 Jenkins 伺服器，以在 Jenkins 執行測試工作時，將資料傳送至 DevOps Insights。如需逐步指示，請參閱 [指導教學](https://www.ibm.com/devops/method/tutorials/tutorial_toolchain_dra?task=2)。"
+deploy.title: "範例服務部署階段"
 deploy.description: "範例工具鏈"
 deploy.longDescription: "Delivery Pipeline 會自動執行連續部署。"
 deploy.appDescription: "Hello World 應用程式的名稱"
