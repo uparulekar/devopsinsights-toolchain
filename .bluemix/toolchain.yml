@@ -34,6 +34,7 @@ services:
       repo_url: '{{form.githubpublic.parameters.devopsinsights-repo_url}}'
       type: clone
       has_issues: true
+      enable_traceability: true
   jenkins:
     service_id: jenkins
     parameters:
