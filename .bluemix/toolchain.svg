@@ -224,7 +224,7 @@
 </g>
 <text id="headerSVG.think" transform="matrix(1 0 0 1 -154.813 1099.45)" class="st23 st24">THINK</text>
 <text id="headerSVG.code" transform="matrix(1 0 0 1 -44.8 1099.45)" class="st23 st24">CODE</text>
-<text id="headerSVG.deliver" transform="matrix(1 0 0 1 44.4 1099.45)" textLength="56" lengthAdjust="spacingAndGlyphs" class="st23 st24">DELIVER</text>
+<text id="headerSVG.deliver" transform="matrix(1 0 0 1 44.4 1099.45)" class="st23 st24">DELIVER</text>
 <text id="headerSVG.run" transform="matrix(1 0 0 1 133.4 1099.45)" class="st23 st24">RUN</text>
 <text id="headerSVG.learn" transform="matrix(1 0 0 1 222.4 1099.45)" class="st23 st24">LEARN</text>
 <text id="headerSVG.jenkins" transform="matrix(1 0 0 1 54.4 1210.45)" class="st23 st24">JENKINS</text>
@@ -312,7 +312,7 @@
 	<line id="line-11" class="st14" x1="9.5" y1="1186.9" x2="9.4" y2="1186.9"/>
 	<line id="line-12" class="st14" x1="8.7" y1="1187" x2="8.6" y2="1187"/>
 	<line id="line-13" class="st14" x1="10.6" y1="1186.8" x2="10.5" y2="1186.8"/>
-	<text id="headerSVG.issueTracker" transform="matrix(1 0 0 1 -42.6 1210.45)" textLength="90" lengthAdjust="spacingAndGlyphs" class="st23 st24">ISSUE TRACKER</text>
+	<text id="headerSVG.issueTracker" transform="matrix(1 0 0 1 -42.6 1210.45)" class="st23 st24">ISSUE TRACKER</text>
 	<text id="headerSVG.gitHub2" transform="matrix(1 0 0 1 -14.6 1222.45)" class="st23 st24">GitHub</text>
 </g>
 <rect id="svg_121_1_" x="313" y="1082" class="st13" width="83" height="4.5"/>
