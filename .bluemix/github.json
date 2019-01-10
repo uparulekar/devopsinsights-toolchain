@@ -1,11 +1,17 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "localized-struct": {
-            "$ref": "github-localized-struct.json"
+     "messages": {
+       "$i18n": "locales.yml"
     },
-    "title": "DevOps Insights with Github and Jenkins",
-    "description": "Feb Demo DevOps Insights with GitHub and Jenkins GitHub Schema",
-    "longDescription": "The GitHub Service allows you to create or use an existing GitHub repository to store your source code.",
+    "title": {
+      "$ref": "#/messages/github.title"
+    },
+    "description": {
+      "$ref": "#/messages/github.description"
+    },
+    "longDescription": {
+      "$ref": "#/messages/github.longDescription"
+    },
     "type": "object",
     "properties": {
         "devopsinsights-repo_name": {
@@ -24,7 +30,9 @@
         "items": [
             {
               "type": "label",
-              "title": "Source Repository"
+              "title": {
+                "$ref": "#/messages/github.sourceRepository"
+              }
             },
             {
               "type": "label",
@@ -32,7 +40,9 @@
             },
             {
               "type": "label",
-              "title": "Target Repository"
+              "title": {
+                "$ref": "#/messages/github.targetRepository"
+              }
             },
             {
               "type": "text",

@@ -1,13 +1,12 @@
 version: '2'
+messages:
+  $i18n: locales.yml
 template:
-  name: 'DevOps Insights template with Github, Jenkins and Slack'
-  description: >-
-    With this toolchain, you can deploy a DevOps insights toolchain containing
-    Github,Slack and Jenkins. You can quickly get Developer / Team and
-    Deployment Risk Insights by using this template to start your analysis.
-
-
-    To get started, click **Create**.
+  name:
+    $ref: "#/messages/template.name"
+  description:
+    $ref: "#/messages/template.description"
+  header: '![](toolchain.svg?localize)'
   icon: icon.svg
   required:
     - github-repo
@@ -19,13 +18,15 @@ template:
       [master](https://github.com/open-toolchain/devopsinsights-toolchain/tree/master)
 toolchain:
   name: 'devopsinsights-toolchain-{{timestamp}}'
+  template:
+    getting_started:
+      $ref: "#/messages/template.gettingStarted"
 services:
   insights:
     service_id: draservicebroker
     parameters:
       criteria:
-        $ref: "insights-criteria.json"
-        $refType: text
+        $text: "insights-criteria.json"
   github-repo:
     service_id: githubpublic
     parameters:
@@ -33,6 +34,7 @@ services:
       repo_url: '{{form.githubpublic.parameters.devopsinsights-repo_url}}'
       type: clone
       has_issues: true
+      enable_traceability: true
   jenkins:
     service_id: jenkins
     parameters:
